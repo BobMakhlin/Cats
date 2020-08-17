@@ -8,6 +8,7 @@
 
 #site-wrapper {
     font-family: 'Bitter', sans-serif;
+    color: var(--black);
     height: 100vh;
 }
 
@@ -62,4 +63,26 @@
 }
 .copyright::before {
     content: '\00a9';
+}
+
+
+.cat-select {
+    font-family: inherit;
+    font-size: 1.5em;
+    border: 2px solid var(--red);
+    padding: 5px 0;
+    padding-left: 8px;
+    padding-right: 3em;
+
+    background-image: url(../images/red-cat-face.png);
+    background-repeat: no-repeat;
+    background-size: 14%;
+    background-position: 97.5%;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.cat-select option:checked, .cat-select option:hover {
+    box-shadow: 0 0 10px 100px #000 inset;
 }
