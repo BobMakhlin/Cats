@@ -1,11 +1,49 @@
-#main {
-    
-}
-
 .cat-select {
     display: block;
     margin: 0 auto;
-    margin-top: 1em;
 }
 
+.breed-line {
+    margin-top: 1.6em;
+}
 
+.breed {
+    width: 30%;
+    margin: 0 auto;
+    font-size: 1.25em;
+}
+.breed__title {
+    text-align: center;
+    margin: 0.3em 0;
+}
+.breed__img {
+    width: 100%;
+    border: 2px solid;
+    border-image-source: linear-gradient(90deg, var(--red) 0%, var(--orange) 100%);
+    border-image-slice: 1;
+    box-sizing: border-box;
+}
+.breed__name {
+    margin-top: 0.1em;
+}
+.breed__description {
+    text-align: justify;
+}
+
+.breed__info-table {
+    width: 100%;
+    margin-top: 0.65em;       
+}
+.breed__info-table th {
+    font-weight: bold;
+}
+.breed__info-table th, .breed__info-table td {
+    border: 2px solid var(--red-dark);
+    vertical-align: middle;
+    padding: 5px;
+    text-align: center;
+}
+
+.characteristic-level::after {
+    content: '/5';
+}
